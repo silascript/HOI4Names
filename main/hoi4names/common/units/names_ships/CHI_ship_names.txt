@@ -92,7 +92,7 @@ CHI_CV_HISTORICAL = {
 	fallback_name = "%d Hangmu"	
 
 	unique = {
-		"Nanshen" "Paonin" "Yingjing" "Tuanji" "Hairong" "Zhaohe" "Haiqi" "Yingrui" "Ninghai" "Pinghai" "Zhongeng" "Haizhao" "Haizhen"	"Feihong" 
+		"河北" "辽宁" "吉林" "黑龙江" "山东" "河南" "山西" "江苏" "浙江" "安徽" "福建" "江西" "湖北" "湖南" "广东" "广西" "云南" "贵州" "四川" "陕西" "甘肃" "新疆" "宁夏" "热河" "绥远" "察哈尔" "西康" "青海"	
 	}
 }
 

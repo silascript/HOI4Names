@@ -10,11 +10,8 @@ CHI_DD_HISTORICAL = {
 
 	fallback_name = "%d Quzujian"					
 
-	unique = {											
-		"Tze Kiang" "Ta Tung" "Chien Wei" "Chien An" 
-		"Shen Yang" "Tan Yang" "Fen Yang" "An Shan" "Fu Shun" "Chang Chun" 
-		"Chien Kang" "Tung An" "Ching Po" "Lung Tuan" 
-		"Fu Po" "Fei Hung" "Yu Chang" "Chang Feng" "Lung Tuan" 
+	unique = {
+		"保定" "芜湖" "南昌" "无锡" "镇江" "滨江" "温州" "徐州" "扬州" "南通" "绍兴" "嘉兴" "安庆" "蚌埠" "景德镇" "沙市" "宜昌" "衡阳" "自贡" "厦门" "汕头" "佛山" "贵阳" "威海" "济宁" "烟台" "太原" "汉中" "兰州" "周口" "安东" "营口" "旅顺" "锦州" "抚顺" "张家口" "常州" "泰州" "金华" "衢州" "亳州" "阜城" "合肥" "九江" "赣州" "江门" "肇庆" "梧州" "桂林" "唐山" "潍坊" "周村" "石家庄" "郑州" "洛阳" "安阳" "许昌" "大同" "辽阳" "银川" "齐齐哈尔" "归绥" "包头"	
 	}
 }
 
@@ -30,7 +27,7 @@ CHI_CL_HISTORICAL = {
 	fallback_name = "%d Qingxing Xunyangjian"
 
 	unique = {
-		"Hairong" "Zhaohe" "Haiqi" "Yingrui" "Ninghai" "Pinghai" "Zhongeng" "Haizhao" "Haizhen"	"Feihong" "Nanshen" "Paonin" "Yingjing" "Tuanji"  
+		"上海" "北平" "广州" "天津" "南京" "汉口" "香港" "杭州" "青岛" "沈阳" "成都" "长沙" "大连" "济南" "武昌" "滨江" "苏州" "福州" "保定" "开封" "重庆" "南昌" "无锡" "宁波" "长春" "沈阳" "吉林" "历城" "开封" "阳曲" "江宁" "杭州" "怀宁" "闽侯" "南昌" "武昌" "长沙" "南宁" "昆明" "贵阳" "成都" "皋兰" "迪化" "西安" "西宁" "承德" "归绥" "康定" "万全" "银川"
 	}
 }
 

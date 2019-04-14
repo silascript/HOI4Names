@@ -108,6 +108,6 @@ CHI_SS_HISTORICAL = {
 	fallback_name = "%d Qianting"
 	
 	unique = {
-		"Ching Po" "Lung Tuan" "Fen Yang" "An Shan" "Yu Chang" "Chang Feng" "Fu Po" "Fei Hung" "Tan Yang" "Shen Yang" 
+		"万仞 "照胆 "玉柄龙 "青霜 "墨阳 "龙渊"工布 "巨阙 "燕支 "画影 "太康 "定光 "含光 "霄练 "锟鋙 "掩日 "断水 "转魄 "悬翦 "惊鲵 "灭魂 "却邪 "真刚 "独鹿 "步光 "鹿卢 "定秦 "水心 "秀霸 "分景 "飞景 "流采 "华铤 "白虹 "紫电 "流星 "棠溪 "承影 "纯钧 "鱼肠 "干将 "莫邪 "泰阿 "赤霄 "湛泸 "轩辕"	
 	}
 }

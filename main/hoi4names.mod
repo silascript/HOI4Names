@@ -1,7 +1,8 @@
-﻿name="hoi4names"
-path="mod/hoi4names/"
+﻿version="1.0"
+name="CHIForceNames"
+path="mod/CHIForceNames/"
 tags={
 	"Historical"
 	"Translation"
 }
-supported_version="1.7.*"
+supported_version="1.8.*"

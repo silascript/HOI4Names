@@ -1,8 +1,8 @@
-﻿version="1.0"
+﻿version="1.1"
 name="CHIForceNames"
 path="mod/CHIForceNames/"
 tags={
 	"Historical"
 	"Translation"
 }
-supported_version="1.8.*"
+supported_version="1.9.*"

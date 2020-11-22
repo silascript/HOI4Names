@@ -1,0 +1,161 @@
+﻿# Original by HK HOI4 Modder Ken80 10-10-2020 辛亥革命109周年
+# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+SHX_INF_01 = 
+{
+	name = "步兵師"
+
+	for_countries = { SHX }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SHX_INF_01 }
+
+	fallback_name = "國民革命軍第%d師"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+	   	 66 = { "國民革命軍第66師" }      #晉綏軍，（閻錫山部）
+		 68 = { "國民革命軍第68師" }      #晉綏軍，（閻錫山部）
+		 69 = { "國民革命軍第69師" }      #晉綏軍，（閻錫山部）
+		 70 = { "國民革命軍第70師" }      #晉綏軍，（閻錫山部）
+		 71 = { "國民革命軍第71師" }      #晉綏軍，（閻錫山部）
+		 72 = { "國民革命軍第72師" }      #晉綏軍，（閻錫山部）
+		 73 = { "國民革命軍第73師" }      #晉綏軍，（閻錫山部）
+                101 = { "國民革命軍第101師" }      #晉綏軍，（傅作義部）
+	        202 = { "國民革命軍新編第2師" }      #晉綏軍，（閻錫山部），原王英部偽軍
+	        231 = { "國民革命軍新編第31師" }      #晉綏軍，（傅作義部）
+	        232 = { "國民革命軍新編第32師" }      #晉綏軍，（傅作義部）
+	        310 = { "國民革命軍暫編第10師" }      #晉綏軍，（傅作義部），偽軍改編
+	        311 = { "國民革命軍暫編第11師" }      #晉綏軍，（傅作義部），偽軍改編
+	        317 = { "國民革命軍暫編第17師" }      #晉綏軍，（傅作義部）
+	        337 = { "國民革命軍暫編第37師" }      #晉綏軍，（閻錫山部）
+	        338 = { "國民革命軍暫編第38師" }      #晉綏軍，（閻錫山部）
+	        339 = { "國民革命軍暫編第39師" }      #晉綏軍，（閻錫山部）
+	        340 = { "國民革命軍暫編第40師" }      #晉綏軍，（閻錫山部）
+	        341 = { "國民革命軍暫編第41師" }      #晉綏軍，（閻錫山部）
+	        342 = { "國民革命軍暫編第42師" }      #晉綏軍，（閻錫山部）
+	        343 = { "國民革命軍暫編第43師" }      #晉綏軍，（閻錫山部）
+	        344 = { "國民革命軍暫編第44師" }      #晉綏軍，（閻錫山部）
+	        345 = { "國民革命軍暫編第45師" }      #晉綏軍，（閻錫山部）
+	        346 = { "國民革命軍暫編第46師" }      #晉綏軍，（閻錫山部）
+	        347 = { "國民革命軍暫編第47師" }      #晉綏軍，（閻錫山部）
+	        348 = { "國民革命軍暫編第48師" }      #晉綏軍，（閻錫山部）
+	        349 = { "國民革命軍暫編第49師" }      #晉綏軍，（閻錫山部）
+	        350 = { "國民革命軍暫編第50師" }      #晉綏軍，（閻錫山部）
+	}
+}
+
+SHX_INF_02 = 
+{
+	name = "獨立旅"
+
+	for_countries = { SHX }
+
+	can_use = { always = yes }
+
+	division_types = { "garrison" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SHX_INF_01 }
+
+	fallback_name = "獨立第%d旅"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		 1 = { "獨立第1旅" }      #晉綏軍，（閻錫山部）
+		 2 = { "獨立第2旅" }      #晉綏軍，（閻錫山部）		 
+		 3 = { "獨立第3旅" }      #晉綏軍，（閻錫山部）
+		 7 = { "獨立第7旅" }      #晉綏軍，（閻錫山部）
+		 8 = { "獨立第8旅" }      #晉綏軍，（閻錫山部）
+	       105 = { "新編獨立第5旅" }      #晉綏軍，（閻錫山部）收編的偽軍
+	       106 = { "新編獨立第6旅" }      #晉綏軍，（閻錫山部）收編的偽軍
+	}
+}
+
+SHX_CAV_01 = 
+{
+	name = "騎兵師"
+
+	for_countries = { SHX }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SHX_INF_01 }
+
+	fallback_name = "國民革命軍騎兵第%d師"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		  1 = { "國民革命軍騎兵第%d師" }      #晉綏軍，（閻錫山部）
+		  2 = { "國民革命軍騎兵第%d師" }      #晉綏軍，（閻錫山部）
+		103 = { "國民革命軍新編騎兵第3師" }      #晉綏軍，（傅作義部）/馬占山收編的偽滿軍/
+		104 = { "國民革命軍新編騎兵第4師" }      #晉綏軍，（傅作義部）/馬占山收編的偽滿軍/
+		  4 = { "國民革命軍騎兵第%d師" }      #西北軍，（宋哲元部）/晉綏軍，（閻錫山部）
+	}
+}
+
+SHX_CAV_02 = 
+{
+	name = "騎兵旅"
+
+	for_countries = { SHX }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SHX_INF_01 }
+
+	fallback_name = "新編騎兵第%d旅"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+	      302 = { "新編騎兵第2旅" }      #晉綏軍，（閻錫山部）收編的偽軍	
+	}
+}

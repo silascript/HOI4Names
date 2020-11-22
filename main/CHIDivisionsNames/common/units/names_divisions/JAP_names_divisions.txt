@@ -1,0 +1,653 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+JAP_INF_01 = 
+{
+	name = "歩兵師団"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "第%d師団"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		168 = { "近衛師団" }
+		1 = { "第%d師団（玉）" }
+		2 = { "第%d師団（勇）" }
+		3 = { "第%d師団（幸）" }
+		4 = { "第%d師団（淀）" }
+		5 = { "第%d師団（鯉）" }
+		6 = { "第%d師団（明）" }
+		7 = { "第%d師団（熊）" }
+		8 = { "第%d師団（杉）" }
+		9 = { "第%d師団（武）" }
+		10 = { "第%d師団（鉄）" }
+		11 = { "第%d師団（錦）" }
+		12 = { "第%d師団（剣）" }
+		13 = { "第%d師団（鏡）" }
+		14 = { "第%d師団（照）" }
+		15 = { "第%d師団（祭）" }
+		16 = { "第%d師団（垣）" }
+		17 = { "第%d師団（月）" }
+		18 = { "第%d師団（菊）" }
+		19 = { "第%d師団（虎）" }
+		20 = { "第%d師団（朝）" }
+		21 = { "第%d師団（討）" }
+		22 = { "第%d師団（原）" }
+		23 = { "第%d師団（旭）" }
+		24 = { "第%d師団（山）" }
+		25 = { "第%d師団（国）" }
+		26 = { "第%d師団（泉）" }
+		27 = { "第%d師団（極）" }
+		28 = { "第%d師団（豊）" }
+		29 = { "第%d師団（雷）" }
+		30 = { "第%d師団（豹）" }
+		31 = { "第%d師団（列）" }
+		32 = { "第%d師団（楓）" }
+		33 = { "第%d師団（弓）" }
+		34 = { "第%d師団（椿）" }
+		35 = { "第%d師団（東）" }
+		36 = { "第%d師団（雪）" }
+		37 = { "第%d師団（冬）" }
+		38 = { "第%d師団（沼）" }
+		39 = { "第%d師団（藤）" }
+		40 = { "第%d師団（鯨）" }
+		41 = { "第%d師団（河）" }
+		42 = { "第%d師団（勲）" }
+		43 = { "第%d師団（誉）" }
+		44 = { "第%d師団（橘）" }
+		46 = { "第%d師団（静）" }
+		47 = { "第%d師団（弾）" }
+		48 = { "第%d師団（海）" }
+		49 = { "第%d師団（狼）" }
+		50 = { "第%d師団（蓬）" }
+		51 = { "第%d師団（基）" }
+		52 = { "第%d師団（柏）" }
+		53 = { "第%d師団（安）" }
+		54 = { "第%d師団（兵）" }
+		55 = { "第%d師団（壮）" }
+		56 = { "第%d師団（龍）" }
+		57 = { "第%d師団（奥）" }
+		58 = { "第%d師団（広）" }
+		59 = { "第%d師団（衣）" }
+		60 = { "第%d師団（矛）" }
+		61 = { "第%d師団（鵄）" }
+		62 = { "第%d師団（石）" }
+		63 = { "第%d師団（陳）" }
+		64 = { "第%d師団（開）" }
+		65 = { "第%d師団（専）" }
+		66 = { "第%d師団（敢）" }
+		68 = { "第%d師団（檜）" }
+		69 = { "第%d師団（勝）" }
+		70 = { "第%d師団（槍）" }
+		71 = { "第%d師団（命）" }
+		72 = { "第%d師団（伝）" }
+		73 = { "第%d師団（怒）" }
+		77 = { "第%d師団（稔）" }
+		79 = { "第%d師団（奏）" }
+		81 = { "第%d師団（納）" }
+		84 = { "第%d師団（突）" }
+		86 = { "第%d師団（積）" }
+		88 = { "第%d師団（要）" }
+		89 = { "第%d師団（摧）" }
+		91 = { "第%d師団（先）" }
+		93 = { "第%d師団（決）" }
+		94 = { "第%d師団（威烈）" }
+		96 = { "第%d師団（玄）" }
+		100 = { "第%d師団（拠）" }
+		102 = { "第%d師団（抜）" }
+		103 = { "第%d師団（駿）" }
+		104 = { "第%d師団（鳳）" }
+		105 = { "第%d師団（勤）" }
+		107 = { "第%d師団（凪）" }
+		108 = { "第%d師団（佑）" }
+		109 = { "第%d師団（胆）" }
+		110 = { "第%d師団（鷺）" }
+		111 = { "第%d師団（市）" }
+		112 = { "第%d師団（公）" }
+		114 = { "第%d師団（将）" }
+		115 = { "第%d師団（北）" }
+		116 = { "第%d師団（嵐）" }
+		117 = { "第%d師団（弘）" }
+		118 = { "第%d師団（恵）" }
+		119 = { "第%d師団（宰）" }
+		120 = { "第%d師団（邁進）" }
+		121 = { "第%d師団（栄光）" }
+		122 = { "第%d師団（舞鶴）" }
+		123 = { "第%d師団（松風）" }
+		124 = { "第%d師団（遠謀）" }
+		125 = { "第%d師団（英機）" }
+		126 = { "第%d師団（英断）" }
+		127 = { "第%d師団（英邁）" }
+		128 = { "第%d師団（英武）" }
+		129 = { "第%d師団（振武）" }
+		130 = { "第%d師団（鍾馗）" }
+		131 = { "第%d師団（秋水）" }
+		132 = { "第%d師団（振起）" }
+		133 = { "第%d師団（進撃）" }
+		134 = { "第%d師団（勾玉）" }
+		135 = { "第%d師団（真心）" }
+		136 = { "第%d師団（不抜）" }
+		137 = { "第%d師団（扶翼）" }
+		138 = { "第%d師団（不動）" }
+		139 = { "第%d師団（不屈）" }
+		140 = { "第%d師団（護東）" }
+		142 = { "第%d師団（護仙）" }
+		143 = { "第%d師団（護古）" }
+		144 = { "第%d師団（護阪）" }
+		145 = { "第%d師団（護州）" }
+		146 = { "第%d師団（護南）" }
+		147 = { "第%d師団（護北）" }
+		148 = { "第%d師団（富嶽）" }
+		149 = { "第%d師団（不撓）" }
+		150 = { "第%d師団（護朝）" }
+		151 = { "第%d師団（護宇）" }
+		152 = { "第%d師団（護沢）" }
+		153 = { "第%d師団（護路）" }
+		154 = { "第%d師団（護土）" }
+		155 = { "第%d師団（護土）" }
+		156 = { "第%d師団（護西）" }
+		157 = { "第%d師団（護弘）" }
+		158 = { "第%d師団（不滅）" }
+		160 = { "第%d師団（護鮮）" }
+		161 = { "第%d師団（震天）" }
+		201 = { "第%d師団（武蔵）" }
+		202 = { "第%d師団（青葉）" }
+		205 = { "第%d師団（安芸）" }
+		206 = { "第%d師団（阿蘇）" }
+		209 = { "第%d師団（加越）" }
+		212 = { "第%d師団（菊池）" }
+		214 = { "第%d師団（常盤）" }
+		303 = { "第%d師団（高師）" }
+		308 = { "第%d師団（岩木）" }
+		312 = { "第%d師団（千歳）" }
+		316 = { "第%d師団（山城）" }
+		320 = { "第%d師団（宣武）" }
+		321 = { "第%d師団（磯）" }
+		322 = { "第%d師団（磐梯）" }
+		344 = { "第%d師団（剣山）" }
+		351 = { "第%d師団（赤城）" }
+		354 = { "第%d師団（武甲）" }
+		355 = { "第%d師団（那智）" }
+	}
+}
+
+JAP_CAV_01 = 
+{
+	name = "騎兵旅団"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "騎兵第%d旅団"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "騎兵第%d旅団" }
+		2 = { "騎兵第%d旅団" }
+		3 = { "騎兵第%d旅団" }
+		4 = { "騎兵第%d旅団" }
+		5 = { "騎兵第%d旅団" }
+		6 = { "騎兵第%d旅団" }
+		7 = { "騎兵第%d旅団" }
+		8 = { "騎兵第%d旅団" }
+		9 = { "騎兵第%d旅団" }
+		10 = { "騎兵第%d旅団" }
+		11 = { "騎兵第%d旅団" }
+		12 = { "騎兵第%d旅団" }
+		13 = { "騎兵第%d旅団" }
+		14 = { "騎兵第%d旅団" }
+		15 = { "騎兵第%d旅団" }
+		16 = { "騎兵第%d旅団" }
+		17 = { "騎兵第%d旅団" }
+		18 = { "騎兵第%d旅団" }
+		19 = { "騎兵第%d旅団" }
+		20 = { "騎兵第%d旅団" }
+	}
+}
+
+JAP_MOT_01 = 
+{
+	name = "自動車化師団"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "自動車化第%d師団"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "自動車化第%d師団" }
+	}
+}
+
+JAP_MEC_01 = 
+{
+	name = "機械化師団"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "機械化第%d師団"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "機械化第%d師団" }
+	}
+}
+
+JAP_ARM_01 = 
+{
+	name = "戦車師団"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "戦車第%d師団"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "戦車第%d師団（拓）" }
+		2 = { "戦車第%d師団（撃）" }
+		3 = { "戦車第%d師団（瀧）" }
+		4 = { "戦車第%d師団（鋼）" }
+	}
+}
+
+JAP_PAR_01 = 
+{
+	name = "挺進集団"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "第%d挺進集団"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "第%d挺進集団（鸞）" }
+	}
+}
+
+JAP_MAR_01 = 
+{
+	name = "陸戦隊"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "第%d特別陸戦隊"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		31 = { "佐世保特別陸戦隊" }
+		32 = { "舞鶴特別陸戦隊" }
+		33 = { "横須賀特別陸戦隊" }
+		34 = { "呉陸戦隊" }
+		35 = { "大湊特別陸戦隊" }
+		36 = { "鎮海特別陸戦隊" }
+		1 = { "第%d特別陸戦隊" }
+		2 = { "第%d特別陸戦隊" }
+		3 = { "第%d特別陸戦隊" }
+		4 = { "第%d特別陸戦隊" }
+		5 = { "第%d特別陸戦隊" }
+		6 = { "第%d特別陸戦隊" }
+		7 = { "第%d特別陸戦隊" }
+		8 = { "第%d特別陸戦隊" }
+		9 = { "第%d特別陸戦隊" }
+		10 = { "第%d特別陸戦隊" }
+		11 = { "第%d特別陸戦隊" }
+		12 = { "第%d特別陸戦隊" }
+		13 = { "第%d特別陸戦隊" }
+		14 = { "第%d特別陸戦隊" }
+		15 = { "第%d特別陸戦隊" }
+		16 = { "第%d特別陸戦隊" }
+		17 = { "第%d特別陸戦隊" }
+		18 = { "第%d特別陸戦隊" }
+		19 = { "第%d特別陸戦隊" }
+		20 = { "第%d特別陸戦隊" }
+		21 = { "第%d特別陸戦隊" }
+		22 = { "第%d特別陸戦隊" }
+		23 = { "第%d特別陸戦隊" }
+		24 = { "第%d特別陸戦隊" }
+		25 = { "第%d特別陸戦隊" }
+		26 = { "第%d特別陸戦隊" }
+		27 = { "第%d特別陸戦隊" }
+		28 = { "第%d特別陸戦隊" }
+		29 = { "第%d特別陸戦隊" }
+		30 = { "第%d特別陸戦隊" }
+	}
+}
+
+JAP_MNT_01 = 
+{
+	name = "山岳師団"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "第%d山岳師団"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "第%d山岳師団" }
+	}
+}
+
+JAP_GAR_01 = 
+{
+	name = "独立守備隊"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "第%d独立守備隊"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "第%d独立守備隊" }
+		2 = { "第%d独立守備隊" }
+		3 = { "第%d独立守備隊" }
+		4 = { "第%d独立守備隊" }
+		5 = { "第%d独立守備隊" }
+	}
+}
+
+JAP_GAR_02 = 
+{
+	name = "警備隊"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "第%d警備隊"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		21 = { "横須賀鎮守府防備戦隊" }
+		22 = { "呉鎮守府防備戦隊" }
+		23 = { "佐世保鎮守府防備戦隊" }
+		24 = { "舞鶴要港部防備隊" }
+		25 = { "大湊要港部防備隊" }
+		26 = { "鎮海要港部防備隊" }
+		27 = { "旅順要港部防備隊" }
+		28 = { "馬公要港部防備隊" }
+		1 = { "第%d警備隊" }
+		2 = { "第%d警備隊" }
+		3 = { "第%d警備隊" }
+		4 = { "第%d警備隊" }
+		5 = { "第%d警備隊" }
+		6 = { "第%d警備隊" }
+		7 = { "第%d警備隊" }
+		8 = { "第%d警備隊" }
+		9 = { "第%d警備隊" }
+		10 = { "第%d警備隊" }
+		11 = { "第%d警備隊" }
+		12 = { "第%d警備隊" }
+		13 = { "第%d警備隊" }
+		14 = { "第%d警備隊" }
+		15 = { "第%d警備隊" }
+		16 = { "第%d警備隊" }
+		17 = { "第%d警備隊" }
+		18 = { "第%d警備隊" }
+		19 = { "第%d警備隊" }
+		20 = { "第%d警備隊" }
+	}
+}
+
+
+JAP_IMB_01 = 
+{
+	name = "独立混成旅団"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { JAP_INF_01 }
+
+	fallback_name = "独立混成第%d旅団"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "独立混成第%d旅団（島）" }
+		2 = { "独立混成第%d旅団（響）" }
+		3 = { "独立混成第%d旅団（造）" }
+		4 = { "独立混成第%d旅団（石）" }
+		5 = { "独立混成第%d旅団（桐）" }
+		6 = { "独立混成第%d旅団（秋）" }
+		7 = { "独立混成第%d旅団（北）" }
+		8 = { "独立混成第%d旅団（春）" }
+		9 = { "独立混成第%d旅団（谷）" }
+		10 = { "独立混成第%d旅団（衣）" }
+		11 = { "独立混成第%d旅団（矛）" }
+		12 = { "独立混成第%d旅団（望）" }
+		13 = { "独立混成第%d旅団（倭）" }
+		14 = { "独立混成第%d旅団（檜）" }
+		15 = { "独立混成第%d旅団（胃）" }
+		16 = { "独立混成第%d旅団（勝）" }
+		17 = { "独立混成第%d旅団（峯）" }
+		18 = { "独立混成第%d旅団（広）" }
+		19 = { "独立混成第%d旅団（潮）" }
+		20 = { "独立混成第%d旅団（槍）" }
+		21 = { "独立混成第%d旅団（西）" }
+		22 = { "独立混成第%d旅団（節）" }
+		23 = { "独立混成第%d旅団（純）" }
+		24 = { "独立混成第%d旅団（厳）" }
+		25 = { "独立混成第%d旅団（磐）" }
+		26 = { "独立混成第%d旅団（嶽）" }
+		27 = { "独立混成第%d旅団（雄）" }
+		28 = { "独立混成第%d旅団（敬）" }
+		29 = { "独立混成第%d旅団（体）" }
+		30 = { "独立混成第%d旅団（拠）" }
+		31 = { "独立混成第%d旅団（抜）" }
+		32 = { "独立混成第%d旅団（駿）" }
+		33 = { "独立混成第%d旅団（勤）" }
+		34 = { "独立混成第%d旅団（育）" }
+		35 = { "独立混成第%d旅団（教）" }
+		36 = { "独立混成第%d旅団（錬）" }
+		37 = { "独立混成第%d旅団（鍛）" }
+		38 = { "独立混成第%d旅団（力）" }
+		39 = { "独立混成第%d旅団（忠）" }
+		40 = { "独立混成第%d旅団（隆）" }
+		43 = { "独立混成第%d旅団（奇）" }
+		44 = { "独立混成第%d旅団（球）" }
+		45 = { "独立混成第%d旅団（球）" }
+		46 = { "独立混成第%d旅団（敢）" }
+		47 = { "独立混成第%d旅団（備）" }
+		48 = { "独立混成第%d旅団（備）" }
+		49 = { "独立混成第%d旅団（備）" }
+		50 = { "独立混成第%d旅団（胆）" }
+		51 = { "独立混成第%d旅団（備）" }
+		52 = { "独立混成第%d旅団（備）" }
+		53 = { "独立混成第%d旅団（胆）" }
+		54 = { "独立混成第%d旅団（萩）" }
+		55 = { "独立混成第%d旅団（菅）" }
+		56 = { "独立混成第%d旅団（貫）" }
+		57 = { "独立混成第%d旅団（桂）" }
+		58 = { "独立混成第%d旅団（盟）" }
+		59 = { "独立混成第%d旅団（碧）" }
+		60 = { "独立混成第%d旅団（駒）" }
+		61 = { "独立混成第%d旅団（鎧）" }
+		62 = { "独立混成第%d旅団（操）" }
+		64 = { "独立混成第%d旅団（球）" }
+		65 = { "独立混成第%d旅団（磯）" }
+		66 = { "独立混成第%d旅団（境）" }
+		67 = { "独立混成第%d旅団（浦）" }
+		69 = { "独立混成第%d旅団（憲）" }
+		70 = { "独立混成第%d旅団（果敢）" }
+		71 = { "独立混成第%d旅団（敢闘）" }
+		72 = { "独立混成第%d旅団（貫徹）" }
+		73 = { "独立混成第%d旅団（赫）" }
+		75 = { "独立混成第%d旅団（興）" }
+		76 = { "独立混成第%d旅団（律）" }
+		77 = { "独立混成第%d旅団（真心）" }
+		78 = { "独立混成第%d旅団（勾玉）" }
+		79 = { "独立混成第%d旅団（丈夫）" }
+		80 = { "独立混成第%d旅団（鋭鋒）" }
+		81 = { "独立混成第%d旅団（至強）" }
+		82 = { "独立混成第%d旅団（至烈）" }
+		83 = { "独立混成第%d旅団（至猛）" }
+		84 = { "独立混成第%d旅団（至勇）" }
+		85 = { "独立混成第%d旅団（至潔）" }
+		86 = { "独立混成第%d旅団（秋霜）" }
+		87 = { "独立混成第%d旅団（震動）" }
+		88 = { "独立混成第%d旅団（沖天）" }
+		89 = { "独立混成第%d旅団（至純）" }
+		90 = { "独立混成第%d旅団（震雷）" }
+		91 = { "独立混成第%d旅団（馳駆）" }
+		92 = { "独立混成第%d旅団（至堅）" }
+		95 = { "独立混成第%d旅団（俊）" }
+		96 = { "独立混成第%d旅団（幡）" }
+		97 = { "独立混成第%d旅団（東明）" }
+		98 = { "独立混成第%d旅団（堅志）" }
+		100 = { "独立混成第%d旅団（盤石）" }
+		101 = { "独立混成第%d旅団（達）" }
+		102 = { "独立混成第%d旅団（八幡）" }
+		103 = { "独立混成第%d旅団（破竹）" }
+		105 = { "独立混成第%d旅団（敢威）" }
+		107 = { "独立混成第%d旅団（堡）" }
+		108 = { "独立混成第%d旅団（翠）" }
+		109 = { "独立混成第%d旅団（剣閃）" }
+		112 = { "独立混成第%d旅団（雷神）" }
+		113 = { "独立混成第%d旅団（瑞光）" }
+		114 = { "独立混成第%d旅団（房）" }
+		115 = { "独立混成第%d旅団（建）" }
+		116 = { "独立混成第%d旅団（建）" }
+		117 = { "独立混成第%d旅団（東部）" }
+		118 = { "独立混成第%d旅団（堅塁）" }
+		119 = { "独立混成第%d旅団（東旭）" }
+		120 = { "独立混成第%d旅団（東天）" }
+		121 = { "独立混成第%d旅団（菊水）" }
+		122 = { "独立混成第%d旅団（堅城）" }
+		123 = { "独立混成第%d旅団（紀伊）" }
+		124 = { "独立混成第%d旅団（鬼城）" }
+		125 = { "独立混成第%d旅団（敬展）" }
+		126 = { "独立混成第%d旅団（敬忠）" }
+		127 = { "独立混成第%d旅団（壮図）" }
+		128 = { "独立混成第%d旅団（快捷）" }
+		129 = { "独立混成第%d旅団（高嶺）" }
+		130 = { "独立混成第%d旅団（奮闘）" }
+		131 = { "独立混成第%d旅団（奮進）" }
+		132 = { "独立混成第%d旅団（奮戦）" }
+		133 = { "独立混成第%d旅団（福寿）" }
+		134 = { "独立混成第%d旅団（奮励）" }
+		135 = { "独立混成第%d旅団（不杤）" }
+		136 = { "独立混成第%d旅団（奮躍）" }
+	}
+}

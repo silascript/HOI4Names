@@ -1,0 +1,117 @@
+﻿# Original by HK HOI4 Modder Ken80 10-10-2020 辛亥革命109周年
+# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+SIC_INF_01 = 
+{
+	name = "步兵師"
+
+	for_countries = { SIC }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SIC_INF_01 }
+
+	fallback_name = "國民革命軍第%d師"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+	        104 = { "國民革命軍第104師" }      #川軍，（李家鈺部）
+	        122 = { "國民革命軍第122師" }      #川軍，（孫震部）
+	        123 = { "國民革命軍第123師" }      #川軍，（孫震部）
+	        124 = { "國民革命軍第124師" }      #川軍，（孫震部）
+	        125 = { "國民革命軍第125師" }      #川軍，（鄧錫侯部）
+	        126 = { "國民革命軍第126師" }      #川軍，（鄧錫侯部）
+	        127 = { "國民革命軍第127師" }      #川軍，（鄧錫侯部）
+	        128 = { "國民革命軍第128師" }      #川軍，（鄧錫侯部）
+	        133 = { "國民革命軍第133師" }      #川軍，（楊森部）
+	        134 = { "國民革命軍第134師" }      #川軍，（楊森部）
+	        144 = { "國民革命軍第144師" }      #川軍，（劉湘部）
+	        145 = { "國民革命軍第145師" }      #川軍，（劉湘部）
+	        146 = { "國民革命軍第146師" }      #川軍，（劉湘部）
+	        147 = { "國民革命軍第147師" }      #川軍，（劉湘部）
+	        148 = { "國民革命軍第148師" }      #川軍，（劉湘部）
+	        149 = { "國民革命軍第149師" }      #川軍，（劉湘部）
+	        150 = { "國民革命軍第150師" }      #川軍，（劉湘部）
+	        161 = { "國民革命軍第161師" }      #川軍，（劉湘部）
+	        162 = { "國民革命軍第162師" }      #川軍，（劉湘部）
+	        163 = { "國民革命軍第163師" }      #川軍，（劉湘部）
+	        164 = { "國民革命軍第164師" }      #川軍，（劉湘部）
+	        178 = { "國民革命軍第178師" }      #川軍，（李家鈺部）
+	        207 = { "國民革命軍新編第7師" }      #川軍，（劉湘部）
+	        208 = { "國民革命軍新編第8師" }      #川軍，（劉湘部）
+	        209 = { "國民革命軍新編第9師" }      #川軍，（鄧錫侯部）
+	        213 = { "國民革命軍新編第13師" }      #川軍，（劉湘部）
+	        214 = { "國民革命軍新編第14師" }      #川軍，（劉湘部）
+	        215 = { "國民革命軍新編第15師" }      #川軍，（劉湘部）
+	        216 = { "國民革命軍新編第16師" }      #川軍，（劉湘部）
+	        217 = { "國民革命軍新編第17師" }      #川軍，（劉湘部）
+	        218 = { "國民革命軍新編第18師" }      #川軍，（劉湘部）
+	        221 = { "國民革命軍新編第21師" }      #川軍，（劉湘部）
+	        225 = { "國民革命軍新編第25師" }      #川軍，（劉湘部）
+                301 = { "國民革命軍暫編第1師" }      #川軍，（孫震部）
+	}
+}
+
+SIC_INF_02 =  
+{
+	name = "獨立旅"
+
+	for_countries = { SIC }
+
+	can_use = { always = yes }
+
+	division_types = { "garrison" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SIC_INF_01 }
+
+	fallback_name = "獨立第%d旅"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		11 = { "獨立第%d旅" }      #川軍，（劉湘部）
+		12 = { "獨立第%d旅" }      #川軍，（劉湘部）
+		13 = { "獨立第%d旅" }      #川軍，（劉湘部）
+		14 = { "獨立第%d旅" }      #川軍，（劉湘部）
+		15 = { "獨立第%d旅" }      #川軍，（劉湘部）
+		16 = { "獨立第%d旅" }      #川軍，（劉湘部）
+		17 = { "獨立第%d旅" }      #川軍，（劉湘部）
+	}
+}

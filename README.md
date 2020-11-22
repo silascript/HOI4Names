@@ -8,6 +8,7 @@
 ### CHIDivisionsNames
 #### 部队史实名系统
 ###### 由52PCGame网友**kenlam1980**提供
+> [原贴链接](https://bbs.52pcgame.net/forum.php?mod=viewthread&tid=344826&page=1&extra=#pid5939944)
 
 #### 舰船命令规则如下:
 * 驱逐舰: 		非人口Top25及省会或城市名

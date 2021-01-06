@@ -3,5 +3,5 @@ tags={
 	"Historical"
 	"Translation"
 }
-name="CHIDivisionsNames"
+name="CHI Divisions Names"
 supported_version="1.10.*"

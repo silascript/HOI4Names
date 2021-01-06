@@ -1,5 +1,5 @@
 version="1.0"
-name="CHIDivisionsNames"
+name="CHI Divisions Names"
 path="mod/CHIDivisionsNames/"
 tags={
 	"Historical"

@@ -1,5 +1,5 @@
 ﻿version="1.2"
-name="CHIForceNames"
+name="CHI Force Names"
 path="mod/CHIForceNames/"
 tags={
 	"Historical"

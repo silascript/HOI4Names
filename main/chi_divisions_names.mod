@@ -1,8 +1,8 @@
-version="1.0"
+version="1.1"
 name="CHI Divisions Names"
 path="mod/CHIDivisionsNames/"
 tags={
 	"Historical"
 	"Translation"
 }
-supported_version="1.10.*"
+supported_version="1.11.*"

@@ -1,7 +1,7 @@
-version="1.2"
+version="1.3"
 tags={
 	"Historical"
 	"Translation"
 }
 name="CHI Force Names"
-supported_version="1.10.*"
+supported_version="1.11.*"
